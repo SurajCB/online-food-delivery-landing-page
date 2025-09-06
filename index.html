@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Nammura Breakfast — Home</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="logo"></span>
+      <span>Nammura Breakfast</span>
+    </a>
+    <nav class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <div class="dropdown">
+        <a class="nav-link" href="menu.html">Menu ▾</a>
+        <div class="dropdown-menu" id="menuDropdown"></div>
+      </div>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="offers.html">Offers</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <button class="btn cart-button" id="openCartBtn">Cart <span class="cart-count" id="cartCount">0</span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- Cart Drawer -->
+<div class="drawer" id="cartDrawer" aria-hidden="true">
+  <div class="backdrop" id="cartBackdrop"></div>
+  <aside class="panel" role="dialog" aria-labelledby="cartTitle">
+    <div class="panel-header">
+      <h3 id="cartTitle">Your Cart</h3>
+      <button class="btn" id="closeCartBtn" aria-label="Close cart">✕</button>
+    </div>
+    <div class="panel-body">
+      <ul id="cartItems"></ul>
+    </div>
+    <div class="panel-footer">
+      <div id="cartTotals" style="margin-bottom:10px"></div>
+      <a class="btn ghost" href="cart.html">Go to Cart Page</a>
+      <button class="btn primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+</div>
+
+<div class="toast" id="toast">Added to cart</div>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">🌞 Fresh • 🫶 Hygienic • ⚡ Fast</span>
+        <h1>Authentic South Indian Breakfast, every morning.</h1>
+        <p>Straight from the tawa and filter to your plate. Crispy dosas, fluffy idlis, and aromatic filter coffee.</p>
+        <div style="margin-top:12px">
+          <a class="btn primary" href="menu.html">Order Now</a>
+          <a class="btn ghost" href="offers.html">View Offers</a>
+        </div>
+      </div>
+      <img alt="Breakfast spread" src="https://t4.ftcdn.net/jpg/02/17/39/75/360_F_217397519_MqLzfynUsUKGvZj1AB3iPREmr11sYRhk.jpg">
+    </section>
+
+    <section style="margin:30px 0">
+      <h2>Popular This Week</h2>
+      <div class="grid" id="popularGrid"></div>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <h4>About Us</h4>
+      <a href="about.html">Our Story</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="offers.html">Offers</a>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <a href="menu.html#dosa">Dosas</a>
+      <a href="menu.html#idli">Idlis</a>
+      <a href="menu.html#vada">Vadas</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="mailto:info@nammurabreakfast.in">Email</a>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+  <div class="container">
+    <small>© 2025 Nammura Breakfast. All rights reserved.</small>
+  </div>
+</footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+  <script>SIB.renderPopular("popularGrid", 4);</script>
+</body>
+</html>
