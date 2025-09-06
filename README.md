@@ -2,18 +2,15 @@
 Nammura Breakfast is a South Indian food ordering landing page designed for a smooth and engaging user experience. It features a modern layout with menu highlights, responsive design, and an easy checkout flow, ideal for restaurants and food startups seeking an online presence.
 
 🚀 Tutorial: Run Nammura Breakfast Landing Page
-This project contains multiple HTML pages for an online food ordering website with all assets (images, CSS, JS) included in a zip file. Follow the steps below to set it up:
+This project contains multiple HTML pages for an online food ordering website. It also includes supporting JavaScript and CSS files (app.js, data.js, style.css). Follow the steps below to set it up and run it on your system:
 1️⃣ Clone or Download the Repository
 If you are using Git, run:
 
 git clone https://github.com/your-username/online-food-delivery-landing-page.git
 
 Or download the ZIP file from GitHub and extract it anywhere on your computer.
-2️⃣ Extract Assets
-Inside the project folder, you’ll see a file named assets.zip.
-- Right-click → Extract Here (or use any unzip tool).
-- Make sure the extracted assets folder is in the same directory as your HTML files.
-✅ Final folder structure should look like this:
+2️⃣ Project Structure
+Make sure the JavaScript and CSS files are placed in the same folder as your HTML files. Your folder should look like this:
 project-folder/
 │-- about.html
 │-- cart.html
@@ -25,7 +22,9 @@ project-folder/
 │-- offers.html
 │-- payment.html
 │-- thankyou.html
-│-- assets/   ← (unzipped here)
+│-- app.js
+│-- data.js
+│-- style.css
 │-- README.md
 3️⃣ Open in VS Code
 1. Open VS Code
@@ -49,3 +48,4 @@ You have two options:
 - Payment → payment.html
 - Thank You Page → thankyou.html
 ✅ That’s it! You now have a fully working South Indian Breakfast Ordering Website running locally on your machine.
+
